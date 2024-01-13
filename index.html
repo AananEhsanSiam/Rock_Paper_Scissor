@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock, Paper, Scissors!</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body>
+    <div class="container">
+        <div class="flex h-screen w-screen justify-center items-center bg-[#003049]">
+            <div class="w-[600px] flex flex-col justify-center items-center bg-[#D62828] px-20 rounded-3xl shadow-md shadow-black hover:shadow-lg hover:shadow-black"">
+                <p class="text-4xl py-10">Let's play!</p>
+                <p class="text-xl">Choose your tool:</p>
+                <div class="btnArea flex gap-10 py-10 text-4xl ">
+                  <button class="btn1 rounded-lg bg-[#FCBF49] focus:bg-[#2A9D8F] px-3 py-1 shadow-md shadow-black hover:shadow-lg hover:shadow-black" type="submit">Rock</button>
+                  <button class="btn2 rounded-lg bg-[#FCBF49] focus:bg-[#2A9D8F] px-3 py-1 shadow-md shadow-black hover:shadow-lg hover:shadow-black" type="submit">Paper</button>
+                  <button class="btn3 rounded-lg bg-[#FCBF49] focus:bg-[#2A9D8F] px-3 py-1 shadow-md shadow-black hover:shadow-lg hover:shadow-black" type="submit">Scissor</button>
+                </div>
+                <p class="text-2xl">Opponent chose:</p>
+                <p class="oppTool text-[60px] pb-3">N/A</p>
+
+                <p class="text-2xl">Result:</p>
+                <p class="result text-[100px]">N/A</p>
+                
+                <p>Scoreboard:</p>
+                <div class="flex gap-5 pb-5">
+                    <p class="won">Win: 0</p>
+                    <p>|</p>
+                    <p class="lost">Lost: 0</p>
+                    <p>|</p>
+                    <p class="draw">Draw: 0</p>
+
+                </div>
+
+        </div>
+        </div>
+        
+        <script src="./index.js"></script>
+    </div>
+</body>
+</html>
